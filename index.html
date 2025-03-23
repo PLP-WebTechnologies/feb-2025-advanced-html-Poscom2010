@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Survey Form</title>
+</head>
+<body>
+   <h3>Orderd country List</h3>
+   <ol type="i" start="1">
+        <li>South Africa
+        <li>Zimbabwe
+        <li>Kenya
+        <li>Swaziland
+    </li>
+   </ol> 
+
+   <img src="https://images.pexels.com/photos/30975332/pexels-photo-30975332/free-photo-of-spring-brunch-with-tulips-and-cake.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load" alt="picture of food" width="450" height="300">
+<br><br>
+
+<section class="contact_table">
+<table border="">
+  <caption><strong>Contact Details</strong></caption>
+    <thead>
+        <tr>
+            <th scope="col">Name</th>
+            <th scope="col">Address</th>
+            <th scope="col">Mobile Phone</th>
+            <th scope="col">Email</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <th scope="row">Trevor</th>
+            <td>14 ghana</td>
+            <td>02587988</td>
+            <td>user1@gmail.com</td>
+        </tr>
+        
+        <tr>
+            <th scope="row">Jonh</th>
+            <td>14 ghana</td>
+            <td>02587988</td>
+            <td>user1@gmail.com</td>
+        </tr>
+
+        <tr>
+            <th scope="row">Gerald</th>
+            <td>001 East Wood </td>
+            <td>02587988</td>
+            <td>user1@gmail.com</td>
+        </tr>
+        
+        <tr>
+            <th scope="row">Maggie</th>
+            <td>1001 East Londo S.A</td>
+            <td>07898785</td>
+            <td>user1@gmail.com</td>
+        </tr>
+
+        <tr>
+            <th scope="row">Eugene</th>
+            <td>1121 Mautitius</td>
+            <td>06987844</td>
+            <td>user1@gmail.com</td>
+        </tr>
+    </tbody>
+</table>
+</section>
+<br><br>
+
+<form action="submit.php" method="post">
+    <fieldset>
+        <legend>Registration Form</legend>
+       <label for="fname">Full Name</label>
+       <input type="text" id ="fname" name="fname" required>
+       <label for="email">Email Address</label>
+       <input type="email" id="user_email" name="email" placeholder="user1@youremail.com">
+       <br><br>
+
+       <label for="address">ResAddress</label>
+       <input type="address"    id="address" name="addres">
+       <label for="phone">Phone Number</label>
+       <input type="text" id="phone" name="phone" placeholder="+00065879755">
+       <br><br>
+
+       <section class="gender_section">
+       <label for="gender">Gender</label>
+       <label for="male"></label>
+       <input type="radio" id="male" name="gender" value="Male">Male
+       <label for="female">Female</label>
+       <input type="radio" id="female" name="gender" value="Female">
+    </section>
+       <br><br>
+
+       <section class="contact_section">
+        <label for="phone_number">Choose Methods</label><br>
+        <input type="checkbox" id="phone" name="phone" value="call">Call <br>
+        <input type="checkbox" id="text" name="sms" value="SMS">SMS <br>
+        <input type="checkbox" id="emai_add" name="email" value="call">email <br>
+           
+       </section>
+      
+       <section name ="country">
+        <label for="country">Choose Country</label>
+        <select name="country" id="country">
+            <option value="choose">---Select---</option>
+            <option value="SA">South Africa</option>
+            <option value="Sw">Swaziland</option>
+            <option value="Ge">Germany</option>
+        </select>
+       </section>
+    </fieldset>
+
+
+
+</form>
+
+</body>
+</html>
+
+
+<!-- Instructions
+Create an index.html file.
+Add an ordered list with roman numerals
+Add an external image from pexels.com
+Add a table of 5 contacts with; name, address, mobile and emails
+Add a registration form
+Note
+
+The registration form should have:
+
+Name, email, password, and date fields.
+A dropdown, radio buttons, and checkboxes.
+Proper labels and placeholders.
+Required fields and validation attributes.
+Ensure proper indentation and commenting -->
